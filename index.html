@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Projet 78
+        </title>
+    </head>
+    <body>
+    <h1>
+        My Family Book
+    </h1>
+    <div>
+    <img id="book_cover" src="cover.jfif" class="center">
+    <p id="fam_name">My Family</p>
+    <div>
+        <button type="button" onclick="nextslide()" id="next">Next</button>
+    </div>
+    </div>
+    
+    <script>
+var img_family=["father.jfif","mother.png","brother.jfif","sister.jfif"];
+var family_name=["Father","Mother","Younger Brother","Me"];
+var i=0;
+var l=0;
+function nextslide() {
+    document.getElementById("book_cover").src=img_family[i];
+    document.getElementById("fam_name").src=family_name[l];
+    i++;
+    l++;
+}
+if(i == 9)
+  {
+    i=0;
+  }
+  if(l == 9)
+  {
+    l=0;
+  }
+    </script>
+    </body>
+    </html>
